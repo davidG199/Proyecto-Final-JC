@@ -54,16 +54,17 @@ nav ul li {
 }
 
 .recomendaciones h1 {
-    justify-content: left;
+    font-size: 2.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 40px;
+    text-transform: uppercase;
 }
 
 .recomendaciones {
     border-radius: 25px;
-    width: 600px;
+    width: 70%;
     text-align: center;
-    margin: 10px;
-    background-color: rgb(150, 205, 207);
+    margin: 10px 20px;
     
 }
 
@@ -89,13 +90,10 @@ nav ul li {
 }
 
 .tendencias {
-    position: relative;
     padding: 10px;   
-    border: #000 solid;
-    right: 50px;
     height: 900px;
-    width: 300px;
-    top: 20px;
+    width: 20%;
+    
 }
 
 .tendencias h1 {
@@ -108,6 +106,7 @@ nav ul li {
 .tendencias img {
     width: 150px;
     display: flex;
+    margin: auto;
 }
 
 .inicio {
@@ -125,6 +124,21 @@ nav ul li {
     transform: scale(1.1);
 }
 
+.recomendaciones img {
+    width: 25%;
+    height: 40%;
+}
+
+footer {
+    background-color: rgb(95, 142, 231);
+    text-align: center;
+    padding: 10px;
+}
+
+footer span {
+    text-transform: uppercase;
+    
+}
 /* @media screen (max-width: 480px ) {} */
     
     
