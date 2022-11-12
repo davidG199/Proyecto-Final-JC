@@ -1,60 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto final</title>
     <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
-  <header>
-    <div class="menu">
-      <a href="index.html"><img src="../imagenes/ojo.png" alt="logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Generos</a></li>
-
-          <li><a href="#">Foro</a></li>
-          <li><a href="login.html">Ingresar</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <body>
-    <section id="login">
-      <div class="iniciar_sesion">
-        <span>Iniciar sesion</span>
-        <div class="form">
-          <form action="">
-            <label for="usuario">Escribe tu nombre de usuario:</label>
-            <input
-              type="text"
-              name="usuario"
-              id="usuario"
-              minlength="3"
-              required
-              placeholder="Ingresa tu usuario"
-            />
-            <br />
-            <label for="">Ingresa tu contraseña:</label>
-            <input
-              type="password"
-              name="contraseña"
-              id="contraseña"
-              required
-              minlength="3"
-              placeholder="Ingresa tu contraseña"
-            />
-          </form>
-          <br />
-        </div>
-        <input type="submit" value="Ingresar" />
-        <br />
-        <a href="#">¿Olvidaste tu contraseña?</a>
-        <p></p>
+    <header>
+      <div class="contenedor"><!-- menu de navegacion-->
+        <a href="./index.html">
+          <img src="../imagenes/ojo.png" alt="logo" class="logo" />
+        <nav>
+          <a href="">Generos</a>
+          <a href="">comic y manga</a>
+          <a href="">Autores</a>
+          <a href="">Mas leidos</a>
+          <a href="">Novedades</a>
+        </nav>
       </div>
-    </section>
+    </header>
   </body>
 </html>

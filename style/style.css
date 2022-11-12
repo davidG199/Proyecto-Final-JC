@@ -1,148 +1,164 @@
+/* estilos generales */
 * {
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+.boton {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 7px black;
+  color: white;
+  background-color: rgb(255, 46, 31);
+  transition: all 300ms ease;
+  border-radius: 20px 0px 20px 0px;
+  margin: 20px 0 20px 0;
+}
+.boton:hover {
+  background-color: rgb(245, 105, 94);
+  border-radius: 20px 20px 20px 20px;
+}
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.menu img {
-    width: 100px;
-    float: left;
-    padding: 10px;
-}
-
+/* estilos para el menu de navegacion */
 header {
-    background-color: rgb(95, 142, 231);
-    width: 100%;
-    clear: both;
-    content: "";
-    display: table;
+  background-color: rgb(245, 245, 245);
+}
+header .logo-nav {
+  margin: 0;
+  padding-left: 25px 30px;
+  height: 100px;
+  width: 100px;
+}
+header .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+header a {
+  text-decoration: none;
+  padding: 5px 12px;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: rgb(15, 15, 15);
 }
 
-.menu {
-    margin: 0 auto;
-    width: 1100px;
-    font-size: 20px;
+/* estilos para el carrusel, novedades */
+.contenedor-carrusel {
+  max-width: 400px;
+  margin: auto;
+}
+#novedades {
+  text-align: center;
+}
+.contenedor-carrusel img {
+  height: 500px;
+  border-radius: 10px;
+}
+.logo img {
+  width: 150px;
 }
 
-nav {
-    float: left;
-    display: flex;
+/* estilos para las categorias destacadas */
+#categorias {
+  text-align: center;
+}
+#categorias .contenedor h2 {
+  border-top: 1px solid;
+  margin: 15px 0px 5px 0px;
 }
 
-nav ul li {
-    list-style: none;
-    margin-left: 80px;
-    padding: 30px 0px;
-    float: left;
-    font-size: 20px;
+#tematicas {
+  display: grid;
+  margin: auto;
+  max-width: 1100px;
+}
+#categorias .boton {
+  margin-top: 50px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+.fotos {
+  display: flex;
+  margin: auto;
 }
 
-.menu li:hover {
-    transform: scale(1.2);
+.logo {
+  background-color: blue;
+  width: 150px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  margin: 10px;
+  display: flex;
+}
+.texto {
+  display: grid;
+}
+.texto a {
+  text-decoration: none;
+  color: black;
+  transition: all 300ms ease;
+}
+.texto a:hover {
+  transform: scale(1.3);  
+  color: green;
 }
 
-.recomendaciones h1 {
-    font-size: 2.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 40px;
-    text-transform: uppercase;
+/* estilos para las recomendaciones */
+#recomendaciones h2 {
+  margin: 15px 0px 15px 0px;
+  
+}
+#recomendaciones {
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+}
+#recomendaciones img {
+  width: 140px;
+  height: 240px;
+}
+#recomendaciones .contenedor{
+  display: flex;
+}
+.cartas h3 {
+  font-size: 15px;
+}
+.cartas {
+  margin: 40px;
+}
+#primer-boton {
+  transform: translate(0px,17px);
+}
+#ultimo-boton {
+  transform: translate(0px,17px);
+}
+/* estilos para los tips de lectura */
+.tip-de-lectura h2 {
+  border-bottom: 1px solid ;
 }
 
-.recomendaciones {
-    border-radius: 25px;
-    width: 70%;
-    text-align: center;
-    margin: 10px 20px;
-
+/* estilos para el pie de pagina  */
+#pie .contenedor {
+  background-color: rgb(245, 245, 245);
 }
-
-.iniciar_sesion {
-    text-align: center;
-    border: #000 solid;
-    left: 200px;
-    right: 300px;
-    top: 50px;
-    position: relative;
-    padding: 90px;
-    width: 900px;
-    background-color: bisque;
-
+#pie {
+  margin:0;
+  max-width: 1100px;
+  height: 40px;
+  text-align: center;
 }
-
-.iniciar_sesion span {
-    font-size: 30px;
-    color: #000;
-    top: 10px;
-    text-transform: uppercase;
-
-}
-
-.tendencias {
-    padding: 10px;
-    height: 900px;
-    width: 20%;
-
-}
-
-.tendencias h1 {
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-
-.tendencias img {
-    width: 150px;
-    display: flex;
-    margin: auto;
-}
-
-.inicio {
-    justify-content: space-between;
-    display: flex;
-}
-
-.inicio img {
-    padding: 5px;
-    transition: all 300ms ease;
-    border-radius: 30px;
-}
-
-.inicio img:hover {
-    transform: scale(1.1);
-}
-
-.recomendaciones img {
-    width: 25%;
-    height: 40%;
-}
-
-footer {
-    background-color: rgb(95, 142, 231);
-    padding: 10px;
-    width: 100%;
-}
-
-footer span {
-    text-transform: uppercase;
-
-}
-
-.pie {
-    width: 1100px;
-    text-align: center;
-}
-
 /* @media screen (max-width: 480px ) {} */
