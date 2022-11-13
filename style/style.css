@@ -1,51 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
 /* estilos generales */
 * {
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+
 }
+
 body {
   margin: 0;
 }
+
 .boton {
   font-size: 1em;
   font-weight: bold;
   padding: 10px 20px;
   box-shadow: 1px 1px 7px black;
   color: white;
-  background-color: rgb(255, 46, 31);
+  background-color: rgb(160, 160, 160);
   transition: all 300ms ease;
   border-radius: 20px 0px 20px 0px;
   margin: 20px 0 20px 0;
 }
+
 .boton:hover {
-  background-color: rgb(245, 105, 94);
+  background-color: rgb(140, 140, 140);
   border-radius: 20px 20px 20px 20px;
 }
+
 .contenedor {
   max-width: 1100px;
   margin: auto;
 }
 
 /* estilos para el menu de navegacion */
-header {
-  background-color: rgb(230, 230, 230);
+#boton-ingresar {
+  background-color: antiquewhite;
+  border-radius: 10px;
 }
 header .logo-nav {
   margin: 0;
-  padding-left: 25px 30px;
   height: 100px;
   width: 100px;
 }
+
 header .contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  z-index: 100;
+  height: 9vh;
+  max-width: 100%;
 }
+
 header nav {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
+
 header a {
   text-decoration: none;
   padding: 5px 12px;
@@ -53,6 +73,7 @@ header a {
   color: black;
   transition: all 300ms ease;
 }
+
 header a:hover {
   transform: scale(1.2);
 }
@@ -62,13 +83,22 @@ header a:hover {
   max-width: 400px;
   margin: auto;
 }
+
 #novedades {
   text-align: center;
+  margin-top: 120px;
 }
+
+#novedades h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .contenedor-carrusel img {
   height: 500px;
   border-radius: 10px;
 }
+
 .logo img {
   width: 150px;
 }
@@ -77,6 +107,7 @@ header a:hover {
 #categorias {
   text-align: center;
 }
+
 #categorias .contenedor h2 {
   border-top: 1px solid;
   margin: 15px 0px 5px 0px;
@@ -85,8 +116,9 @@ header a:hover {
 #tematicas {
   display: grid;
   margin: auto;
-  max-width: 1100px;
+  max-width: 100%;
 }
+
 #categorias .boton {
   margin-top: 50px;
 }
@@ -104,18 +136,22 @@ header a:hover {
   margin: 10px;
   display: flex;
 }
+
 .texto {
   display: grid;
 }
+
 .texto a {
   text-decoration: none;
   color: black;
   transition: all 300ms ease;
 }
+
 .texto a:hover {
   transform: scale(1.3);
   color: green;
 }
+
 #primer-cuadro {
   background-color: red;
 }
@@ -123,57 +159,77 @@ header a:hover {
 #segundo-cuadro {
   background-color: green;
 }
+
 #tercer-cuadro {
   background-color: blue;
 }
+
 #cuarto-cuadro {
   background-color: yellow;
 }
+
 #quinto-cuadro {
   background-color: violet;
 }
+
 /* estilos para las recomendaciones */
 #recomendaciones h2 {
   margin: 15px 0px 15px 0px;
 }
+
 #recomendaciones {
   text-align: center;
   max-width: 1100px;
   margin: auto;
   display: grid;
 }
+
 #recomendaciones img {
   width: 140px;
   height: 240px;
 }
+
 #recomendaciones .contenedor {
   display: flex;
 }
+
 .cartas h3 {
   font-size: 15px;
+  margin: 10px 0;
 }
+
 .cartas {
-  margin: 40px;
+  margin: 35px;
   transition: all 300ms ease;
 }
+
 .cartas:hover {
   transform: scale(1.1);
 }
+
 #primer-boton {
   transform: translate(0px, 17px);
 }
+
 #ultimo-boton {
   transform: translate(0px, 17px);
 }
+
+#segundo-boton {
+  transform: translate(0px, 17px);
+}
+
 /* estilos para los tips de lectura */
 .tip-de-lectura h2 {
   border-bottom: 1px solid;
   text-align: center;
   margin: 10px 5px;
 }
+
 .tip-de-lectura h4 {
   color: rgb(160, 160, 160);
 }
+
 .tip-de-lectura .contenedor {
   margin-bottom: 100px;
 }
@@ -183,28 +239,48 @@ header a:hover {
   background-color: rgb(230, 230, 230);
 }
 
-
 /* estilos para el login */
 #login .contenedor {
   text-align: center;
 }
+#login h2 {
+  margin-top: 100px;
+}
 #login {
   text-align: center;
 }
-@media (min-width: 500px) {
+
+@media (min-width: 500px)  {
   header {
     width: 100%;
   }
+
   header .contenedor {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+
   header nav {
     flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
+    
   }
+
   #categorias .contenedor {
     display: grid;
+  }
+
+}
+
+@media (max-width: 499px)
+{
+
+}
+
+@media (max-width: 800px){
+  #recomendaciones .contenedor {
+    display: grid;
+    margin: 0;
   }
 }

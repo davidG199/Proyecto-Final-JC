@@ -1,106 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto final</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <!-- menu de navegacion  -->
-      <div class="contenedor">
-        <a href="./index.html">
-          <img src="../imagenes/ojo.png" alt="logo" class="logo-nav" />
-        </a>
-        <nav>
-          <a href="./index.html">Inicio</a>
-          <a href="">Generos</a>
-          <a href="">Autores</a>
-          <a href="">Mas leidos</a>
-          <a href="">Novedades</a>
-          <a href="./login.html">Ingresar</a>
-        </nav>
-      </div>
-    </header>
-    <section id="login">
-      <div id="contenedor">
-        <h2>login</h2>
-        <p>¿no tienes una cuenta?<br><a href="#">Registrarse</a></p>
-        <form action="">
-          <label for="name">Username:</label>
-          <input
-            type="name"
-            required />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto final</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <!-- menu de navegacion  -->
+    <div class="contenedor">
+      <a href="./index.html">
+        <img src="../imagenes/ojo.png" alt="logo" class="logo-nav" />
+      </a>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="">Generos</a>
+        <a href="">Autores</a>
+        <a href="">Mas leidos</a>
+        <a href="">Novedades</a>
+        <a id="boton-ingresar" href="./login.html">Ingresar</a>
+      </nav>
+    </div>
+  </header>
+  <section id="login">
+    <div id="contenedor">
+      <h2>login</h2>
+      <p>¿no tienes una cuenta?<br><a href="#">Registrarse</a></p>
+      <form action="">
+        <label for="name">Username:</label>
+        <input type="name" required minlength="2" maxlength="10" />
+        <br>
+        <label for="username">Password:</label>
+        <input type="password" required minlength="2" maxlength="10" />
+        <p><a href="#">Olvidaste tu contraseña?</a></p>
+        <div id="lower">
+          <input type="checkbox" />
+          <label class="checkado" for="checkbox">¿Deseas mantener la sesion activa?</label>
           <br>
-          <label for="username">Password:</label>
-          <input 
-          type="password"/>
-          <p><a href="#">Olvidaste tu contraseña?</a></p>
-          <div id="lower">
-            <input 
-              type="checkbox"
-              required/>
-            <label class="checkado" for="checkbox">¿Deseas mantener la sesion activa?</label>
-            <br>
-            <input type="submit" value="Login" />
+          <input type="submit" value="Continuar" />
+        </div>
+      </form>
+    </div>
+  </section>
+  c
+  <footer>
+    <!-- pie de pagina -->
+    <div class="container-fluid">
+      <div class="row p-5 pb-2 pt-3">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <p class="mt-5">
+            &copy Proyecto final Jovenes Creativos <br />
+            David Gomez ✌
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <p class="h5 mb-4">links</p>
+          <div class="mb-2">
+            <a href="" class="text-dark text-decoration-none">terms & conditions</a>
           </div>
-        </form>
-      </div>
-    </section>
-    c
-    <footer>
-      <!-- pie de pagina -->
-      <div class="container-fluid">
-        <div class="row p-5 pb-2 pt-3">
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="mt-5">
-              &copy Proyecto final Jovenes Creativos <br />
-              David Gomez ✌
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="h5 mb-4">links</p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >terms & conditions</a
-              >
-            </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >privacy and police</a
-              >
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="h5 mb-4">Contacto</p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">instagram</a>
-            </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">facebook</a>
-            </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">Github</a>
-            </div>
-          </div>
-          <div class="col-xs-12 pt-2">
-            <p class="text-center">Copyright - All rights reserved 2022</p>
+          <div class="mb-2">
+            <a href="" class="text-dark text-decoration-none">privacy and police</a>
           </div>
         </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <p class="h5 mb-4">Contacto</p>
+          <div class="mb-2">
+            <a href="" class="text-dark text-decoration-none">instagram</a>
+          </div>
+          <div class="mb-2">
+            <a href="" class="text-dark text-decoration-none">facebook</a>
+          </div>
+          <div class="mb-2">
+            <a href="" class="text-dark text-decoration-none">Github</a>
+          </div>
+        </div>
+        <div class="col-xs-12 pt-2">
+          <p class="text-center">Copyright - All rights reserved 2022</p>
+        </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
