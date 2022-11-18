@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
 /* estilos generales */
 * {
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
-
-}
+  font-family: 'Noto Sans', sans-serif;}
 
 body {
   margin: 0;
@@ -34,6 +32,7 @@ body {
 }
 
 /* estilos para el menu de navegacion */
+
 #boton-ingresar {
   border-radius: 10px;
   border: 1px solid;
@@ -130,6 +129,10 @@ header a:hover {
   display: flex;
   margin: auto;
 }
+.logo img {
+  width: 100px;
+  height: 100px;
+}
 
 .logo {
   background-color: blue;
@@ -138,6 +141,7 @@ header a:hover {
   border-bottom-right-radius: 100%;
   margin: 10px;
   display: flex;
+
 }
 
 .texto {
@@ -240,7 +244,9 @@ header a:hover {
 /* estilos para el pie de pagina  */
 .container-fluid {
   background-color: rgb(230, 230, 230);
+  z-index: 100;
 }
+
 
 /* estilos para el login */
 #login .contenedor {
@@ -253,7 +259,9 @@ header a:hover {
   text-align: center;
 }
 
-@media (min-width: 500px)  {
+/* media quare para hacer la pagina responsive */
+
+@media (min-width: 500px ){
   header {
     width: 100%;
   }

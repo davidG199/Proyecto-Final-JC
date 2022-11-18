@@ -1,0 +1,62 @@
+.mas-leidos {
+    margin-top: 80px;
+}
+
+
+.mas-leidos .contenedor {
+    width: 250px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.libro-deslizante {
+    height: 350px;
+    border-radius: 10%;
+}
+
+.libro-deslizante img {
+    width: 100%;
+    height: 100%;
+}
+
+.libro-deslizante-info {
+    width: 100%;
+    display: flex;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+}
+
+.libro-deslizante-info .puntuacion {
+    font-weight: 600;
+    font-size: 1.0rem;
+    letter-spacing: 0.5;
+}
+
+.tipo-libro-deslizante {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tipo-libro-deslizante span {
+    font-size: 17.4px;
+    margin: 5px 0;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.autor-libro-deslizante {
+    color:rgb(170, 170, 170);
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 95, 236, 0.6);
+}
