@@ -171,7 +171,6 @@ header a:hover {
 }
 
 .logo {
-  background-color: blue;
   width: 150px;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
@@ -197,22 +196,27 @@ header a:hover {
 
 #primer-cuadro {
   background-color: red;
+  filter: brightness(95%);
 }
 
 #segundo-cuadro {
   background-color: green;
+  filter: brightness(95%);
 }
 
 #tercer-cuadro {
   background-color: blue;
+  filter: brightness(95%);
 }
 
 #cuarto-cuadro {
   background-color: yellow;
+  filter: brightness(95%);
 }
 
 #quinto-cuadro {
   background-color: violet;
+  filter: brightness(95%);
 }
 
 /* estilos para las recomendaciones */
@@ -270,12 +274,17 @@ header a:hover {
 }
 
 .tip-de-lectura h4 {
-  color: rgb(160, 160, 160);
+  color: rgb(133, 133, 133);
 }
 
 .tip-de-lectura .contenedor {
   margin-bottom: 100px;
 }
+
+.tip-de-lectura .contenedor p {
+  font-size: 18px;
+}
+
 
 /* estilos para el pie de pagina  */
 .container-fluid {
