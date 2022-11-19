@@ -78,6 +78,7 @@ header a {
 
 header a:hover {
   transform: scale(1.2);
+  color: black;
 }
 
 /* estilos para el carrusel, novedades */
@@ -249,15 +250,23 @@ header a:hover {
 
 
 /* estilos para el login */
-#login .contenedor {
-  text-align: center;
+
+#login .text-end img {
+  width: 68px;
 }
-#login h2 {
-  margin-top: 100px;
+
+#login .col img {
+  width: 35px;
+  border-radius: 50%;
 }
-#login {
-  text-align: center;
+
+#login .bg {
+  background-image: url(../imagenes/fondo-libro.jpg);
+  background-position: center center;
+
 }
+
+
 
 /* media quare para hacer la pagina responsive */
 
