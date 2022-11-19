@@ -107,7 +107,7 @@ header a:hover {
   text-align: center;
 }
 
-#contenido {  
+.contenido {  
   padding: 10px 0px 0;
   max-height: 270px;
   overflow: hidden;
@@ -116,13 +116,14 @@ header a:hover {
   margin-top: 10px;
   flex-direction: column;
   margin: 0;
+  display: none;
 }
 
-#contenido.abierto {
-  max-height: 1000px;
+.mostrar {
+  display: block;
 }
 
-#contenido li {
+.contenido li {
   margin-bottom: 16px;
   flex-direction: row;
 }
@@ -136,9 +137,11 @@ header a:hover {
   flex-direction: column;
   width: 400px;
   margin: auto;
+  
+  
 }
 
-#contenido li {
+.contenido li {
   list-style: none;
 }
 
@@ -339,7 +342,7 @@ header a:hover {
   margin: 15px 50px 0 45px;
   border: 1px solid none;
   background-color:rgb(230, 230, 230);
-  width: 250px;
+  width: 280px;
   height: 35  px;
   color: gray;
   border-radius: 10px;

@@ -1,15 +1,17 @@
-const articulo = document.querySelector("#contenido");
-const button = document.querySelector("#boton-ver-mas");
 
-button.addEventListener("click", leerMas)
+let botonVerMas = document.getElementById('botonVerMas');
+let verMas = document.getElementById('verMas');
 
-function leerMas() {
-    if (articulo.className == "abierto") {
-        articulo.className = "";
-        button.textContent = "Mostrar mas"
+botonVerMas.addEventListener('click', toggleText);
+
+function toggleText() {
+    verMas.classList.toggle('mostrar');
+
+    if(verMas.classList.contains('mostrar')) {
+        botonVerMas.innerHTML = "ver menos categorias";
     } else {
-        articulo.className ="abierto";
-        button.textContent = "Mostrar menos";
+        botonVerMas.innerHTML = "Ver mas categorias";
     }
 
-}
+}   
+
