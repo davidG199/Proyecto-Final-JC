@@ -1,4 +1,15 @@
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+const articulo = document.querySelector("#contenido");
+const button = document.querySelector("#boton-ver-mas");
+
+button.addEventListener("click", leerMas)
+
+function leerMas() {
+    if (articulo.className == "abierto") {
+        articulo.className = "";
+        button.textContent = "Mostrar mas"
+    } else {
+        articulo.className ="abierto";
+        button.textContent = "Mostrar menos";
+    }
+
 }

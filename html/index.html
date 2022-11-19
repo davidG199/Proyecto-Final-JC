@@ -20,12 +20,13 @@
         <img src="../imagenes/ojo.png" alt="logo" class="logo-nav" />
       </a>
       <nav class="navbar navbar-default">
-        <div class="container-fluid"></div>
-        <a href="./index.html">Inicio</a>
-        <a href="">Generos</a>
-        <a href="">Autores</a>
-        <a href="./vistos.html">Mas leidos</a>
-        <a id="boton-ingresar" href="./login.html">Ingresar</a>
+        <div class="container-fluid">
+          <a href="./index.html">Inicio</a>
+          <a href="">Generos</a>
+          <a href="./vistos.html">Mas leidos</a>
+          <a id="boton-ingresar" href="./login.html">Ingresar</a>
+          
+        </div>
       </nav>
     </div>
   </header>
@@ -72,7 +73,7 @@
   <section id="categorias">
     <div class="contenedor">
       <h2>Tematicas destacadas</h2>
-      <div id="tematicas">
+      <div class="tematicas">
         <div class="cuadros">
           <div class="cuadritos">
             <div class="logo" id="primer-cuadro"><img src="../imagenes/iconos/game.svg" alt="iconos"></div>
@@ -97,7 +98,21 @@
         </div>
       </div>
     </div>
-    <button class="boton">Ver mas categorias</button>
+    <div class="boton-funcionJS">
+      <div id="contenido">
+        <ul>
+        <li>Terror</li>
+        <li>Suspenso</li>
+        <li>Poemas</li>
+        <li>Novela policiacas</li>
+        <li>Libros de historia</li>
+        <li>Aventuras</li>
+        <li>Politica</li>
+        <li>Auto ayuda</li>
+      </ul>
+    </div>
+  </div>
+  <button class="boton" id="boton-ver-mas">Ver mas categorias</button>
     <!-- fin de categorias destacadas -->
   </section>
   <section id="recomendaciones">
