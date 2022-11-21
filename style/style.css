@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 
 /* estilos generales */
 * {
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;}
+  font-family: "Noto Sans", sans-serif;
+}
 
 body {
   margin: 0;
@@ -19,7 +20,6 @@ body {
   transition: all 300ms ease;
   margin: 20px 0 20px 0;
   border: none;
-  
 }
 
 .boton:hover {
@@ -41,7 +41,6 @@ body {
 #boton-ingresar:hover {
   background-color: black;
   color: white;
-
 }
 header .logo-nav {
   margin: 0;
@@ -56,7 +55,7 @@ header .contenedor {
   top: 0;
   background-color: rgb(230, 230, 230);
   width: 100%;
-  height:10vh;
+  height: 10vh;
   max-width: 100%;
 }
 
@@ -107,7 +106,7 @@ header a:hover {
   text-align: center;
 }
 
-.contenido {  
+.contenido {
   padding: 10px 0px 0;
   max-height: 270px;
   overflow: hidden;
@@ -124,25 +123,19 @@ header a:hover {
 }
 
 .contenido li {
-  margin-bottom: 16px;
-  flex-direction: row;
+  list-style: none;
 }
 
-
 .boton-funcionJS {
-  background-color:rgb(230, 230, 230);
+  background-color: rgb(230, 230, 230);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 400px;
   margin: auto;
-  
-  
-}
-
-.contenido li {
-  list-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 #categorias .contenedor h2 {
@@ -157,7 +150,7 @@ header a:hover {
 }
 
 #categorias .boton {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .cuadros {
@@ -167,7 +160,6 @@ header a:hover {
 .logo img {
   height: 150px;
   width: 120px;
-  
 }
 
 .logo {
@@ -285,16 +277,13 @@ header a:hover {
   font-size: 18px;
 }
 
-
 /* estilos para el pie de pagina  */
 .container-fluid {
   background-color: rgb(230, 230, 230);
   z-index: 100;
 }
 
-
 /* estilos para el login */
-
 
 #pagina-login {
   background-color: rgb(200, 200, 200);
@@ -321,7 +310,7 @@ header a:hover {
 
 #login form button:hover {
   background-color: rgb(140, 140, 140);
-} 
+}
 
 #login #iniciar-sesion-redes {
   text-transform: uppercase;
@@ -334,7 +323,7 @@ header a:hover {
   margin: auto;
   max-width: 1100px;
   text-align: center;
-  margin-top: 90px ;
+  margin-top: 90px;
 }
 
 #mas-leidos img {
@@ -350,16 +339,15 @@ header a:hover {
   text-align: start;
   margin: 15px 50px 0 45px;
   border: 1px solid none;
-  background-color:rgb(230, 230, 230);
+  background-color: rgb(230, 230, 230);
   width: 280px;
-  height: 35  px;
+  height: 35 px;
   color: gray;
   border-radius: 10px;
 }
 
 .titulo-categoria h4 {
   text-align: center;
-
 }
 
 #mas-leidos .contenedor {
@@ -369,11 +357,11 @@ header a:hover {
 
 /* media quare para hacer la pagina responsive */
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
   header {
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 100;
   }
 
@@ -391,16 +379,12 @@ header a:hover {
   #tematicas {
     display: grid;
   }
-
-
 }
 
-@media (max-width: 499px)
-{
-
+@media (max-width: 499px) {
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
   #recomendaciones .contenedor {
     display: flex;
     margin: 0;
