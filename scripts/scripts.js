@@ -13,17 +13,3 @@ function toggleText() {
   }
 }
 
-let botonVerMasUno = document.getElementById("botonVerMasUno");
-let verMasUno = document.getElementById("verMasUno");
-
-botonVerMasUno.addEventListener("click", toggleText);
-
-function toggleText() {
-  verMasUno.classList.toggle("mostrar");
-
-  if (verMasUno.classList.contains("mostrar")) {
-    botonVerMasUno.innerHTML = "ver menos";
-  } else {
-    botonVerMasUno.innerHTML = "Ver mas";
-  }
-}
