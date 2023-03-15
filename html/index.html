@@ -106,7 +106,9 @@
     <!-- tematicas destacadas -->
     <section id="categorias">
       <div class="contenedor">
-        <h2>Tematicas destacadas</h2>
+        <div class="caja">
+          <h2>Tematicas destacadas</h2>
+        </div>
         <div class="tematicas">
           <div class="cuadros">
             <div class="cuadritos">
@@ -161,12 +163,13 @@
     </section>
     <section id="recomendaciones">
       <!-- recomendaciones de libros -->
-      <h2>Nuestras recomendaciones</h2>
+      <div class="caja">
+        <h2>Nuestras recomendaciones</h2>
+      </div>
       <div class="contenedor">
         <div class="cartas">
           <img src="../imagenes/png.jpg" alt="libro-1" />
-          <h3>El arte de engañar
-            <br>el karma</h3>
+          <h3>El arte de engañar <br />el karma</h3>
           <button class="boton" id="botonVerMasUno">Ver mas</button>
         </div>
         <div class="cartas boton-ver-mas">
@@ -181,8 +184,7 @@
         </div>
         <div class="cartas boton-ver-mas">
           <img src="../imagenes/libro-4.jpg" alt="libro-4" />
-          <h3>Como hacer que te pasen 
-            <br>cosas buenas</h3>
+          <h3>Como hacer que te pasen <br />cosas buenas</h3>
           <button class="boton">Ver mas</button>
         </div>
         <div class="cartas boton-ver-mas">
@@ -194,112 +196,163 @@
       <br />
       <!-- fin de recomendaciones de libros -->
     </section>
-    <section class="tip-de-lectura">
-      <!-- tips para leer mejor  -->
-      <div class="contenedor">
-        <h2>Tips de lectura</h2>
-        <h4>Reserva al menos 20 minutos al dia para leer.</h4>
-        <p>
-          El día a día nos consume y nos deja sin tiempo para momentos de ocio,
-          como puede ser la lectura de libros. Es por eso por lo que es
-          importante una buena organización y reservar un pequeño espacio de
-          tiempo para leer. Quizás 20 minutos sean más que suficientes para
-          empezar, aunque seguro que pronto te darás cuenta que es tiempo
-          insuficiente. Puedes leer después de comer, antes de cenar o justo
-          cuando te acuestas en la cama. Eso sí, es importante comprometerse a
-          cumplirlo para poder crear el hábito de la lectura.
-        </p>
-        <br />
-        <h4>Habla e intercambia libros con familiares y amigos</h4>
-        <p>
-          Leer es contagioso, y qué mejor que propagar esta acción entre las
-          personas allegadas. No dudes en hablar de los libros que te estás
-          leyendo con familiares y amigos, y participa en el intercambio de
-          libros con ellos. Sugiéreles nuevas lecturas en función de tus
-          impresiones y déjate aconsejar por ellos. Quizás sea un buen momento
-          para descubrir nuevos libros que te marcarán o para darte cuenta que
-          ese género literario no está hecho para ti.
-        </p>
-        <h4>Dejate recomendar.</h4>
-        <p>
-          Elegir cuál será tu próxima lectura no es fácil, más si el libro que
-          has terminado ha dejado el listón bastante alto. Es por ello por lo
-          que puedes dejarte recomendar por profesionales del sector del libro
-          como son los bibliotecarios o los libreros. También puedes tener en
-          cuenta las recomendaciones que hacen las editoriales, los críticos
-          literarios, los blogs sobre libros y lecturas e incluso los
-          booktubers.
-        </p>
-        <h4>No pongas pretextos.</h4>
-        <p>
-          Procura darle tiempo a las palabras y a las historias, lo cual se
-          convertirá en un círculo virtuoso que te dará oportunidad de ver cosas
-          que no habías visto porque las ignorabas.
-        </p>
-        <h4>Recuerda que los libros enriquecen la vida.</h4>
-        <p>
-          desarrollan la conciencia personal y la cultura. Conservan el saber,
-          lo difunden y le abren nuevos horizontes. Favorecen la imaginación, la
-          creación, la investigación, la innovación. Entonces, ¡ahora sí!
-          comienza hoy mismo con un pequeño texto para hacer de la vida un
-          evento extraordinario.
-        </p>
+    <!-- tips para leer mejor  -->
+    <section class="tip-de-lectura container-fluid">
+      <div class="caja">
+        <h2 class="titulo">TIPS PARA LEER MEJOR</h2>
+      </div>
+      <div
+        class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 m-4"
+      >
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-header mb-3"><strong>tip#1</strong></div>
+              <h5 class="card-title">
+                Reserva al menos 20 minutos al dia para leer.
+              </h5>
+              <p class="card-text">
+                El día a día nos consume y nos deja sin tiempo para momentos de
+                ocio, como puede ser la lectura de libros. Es por eso por lo que
+                es importante una buena organización y reservar un pequeño
+                espacio de tiempo para leer. Quizás 20 minutos sean más que
+                suficientes para empezar, aunque seguro que pronto te darás
+                cuenta que es tiempo insuficiente. Puedes leer después de comer,
+                antes de cenar o justo cuando te acuestas en la cama. Eso sí, es
+                importante comprometerse a cumplirlo para poder crear el hábito
+                de la lectura.
+              </p>
+              <button class="btn btn-primary">LEER MAS!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-header mb-3"><strong>tip#2</strong></div>
+              <h5 class="card-title">
+                Habla e intercambia libros con familiares y amigos
+              </h5>
+              <p class="card-tex">
+                Leer es contagioso, y qué mejor que propagar esta acción entre
+                las personas allegadas. No dudes en hablar de los libros que te
+                estás leyendo con familiares y amigos, y participa en el
+                intercambio de libros con ellos. Sugiéreles nuevas lecturas en
+                función de tus impresiones y déjate aconsejar por ellos. Quizás
+                sea un buen momento para descubrir nuevos libros que te marcarán
+                o para darte cuenta que ese género literario no está hecho para
+                ti.
+              </p>
+              <button class="btn btn-primary">LEER MAS!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-header mb-3"><strong>tip#3</strong></div>
+              <h5 class="card-title">Dejate recomendar.</h5>
+              <p class="card-text">
+                Elegir cuál será tu próxima lectura no es fácil, más si el libro
+                que has terminado ha dejado el listón bastante alto. Es por ello
+                por lo que puedes dejarte recomendar por profesionales del
+                sector del libro como son los bibliotecarios o los libreros.
+                También puedes tener en cuenta las recomendaciones que hacen las
+                editoriales, los críticos literarios, los blogs sobre libros y
+                lecturas e incluso los booktubers.
+              </p>
+              <button class="btn btn-primary">LEER MAS!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-header mb-3"><strong>tip#4</strong></div>
+              <h5 class="card-title">No pongas pretextos.</h5>
+              <p class="card-text">
+                Procura darle tiempo a las palabras y a las historias, lo cual
+                se convertirá en un círculo virtuoso que te dará oportunidad de
+                ver cosas que no habías visto porque las ignorabas.
+              </p>
+              <button class="btn btn-primary">LEER MAS!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-header mb-3"><strong>tip#5</strong></div>
+              <h5 class="card-title">
+                Recuerda que los libros enriquecen la vida.
+              </h5>
+              <p class="card-text">
+                desarrollan la conciencia personal y la cultura. Conservan el
+                saber, lo difunden y le abren nuevos horizontes. Favorecen la
+                imaginación, la creación, la investigación, la innovación.
+                Entonces, ¡ahora sí! evento extraordinario. comienza hoy mismo
+                con un pequeño texto para hacer de la vida un
+              </p>
+              <button class="btn btn-primary">LEER MAS!</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- fin tips para leer mejor -->
     <!-- pie de pagina -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row p-5 pb-2 pt-3">
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="mt-5">
-              &copy Proyecto final Jovenes Creativos <br />
-              David Gomez ✌
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="h5 mb-4 "><strong>Links</strong></p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >terms & conditions</a
-              >
+      <footer>
+        <div class="container-fluid pie">
+          <div class="row p-5 pb-2 pt-3">
+            <div class="col-xs-12 col-md-8 col-lg-4 col-sm-4">
+              <p class="mt-5">
+                &copy Proyecto final Jovenes Creativos <br />
+                David Gomez ✌
+              </p>
             </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >privacy and police</a
-              >
+            <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
+              <p class="h5 mb-4"><strong>Links</strong></p>
+              <div class="mb-2">
+                <a href="" class="text-dark text-decoration-none"
+                  >terms & conditions</a
+                >
+              </div>
+              <div class="mb-2">
+                <a href="" class="text-dark text-decoration-none"
+                  >privacy and police</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <p class="h5 mb-4"><strong>Contacto</strong></p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">
-                <img src="../imagenes/iconos/instagram.svg" alt="" />
-                instagram</a
-              >
+            <div class="col-xs-12 col-md-6 col-lg-4 col-sm-4">
+              <p class="h5 mb-4"><strong>Contacto</strong></p>
+              <div class="mb-2">
+                <a href="" class="text-dark text-decoration-none">
+                  <img src="../imagenes/iconos/instagram.svg" alt="" />
+                  instagram</a
+                >
+              </div>
+              <div class="mb-2">
+                <a href="" class="text-dark text-decoration-none">
+                  <img src="../imagenes/iconos/facebook.svg" alt="" /> facebook</a
+                >
+              </div>
+              <div class="mb-2">
+                <a
+                  class="text-dark text-decoration-none"
+                  href="https://github.com/davidG199"
+                >
+                  <img src="../imagenes/iconos/github.svg" alt="" /> Github</a
+                >
+              </div>
             </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">
-                <img src="../imagenes/iconos/facebook.svg" alt="" /> facebook</a
-              >
+            <div class="col-xs-12 pt-2">
+              <p class="text-center">
+                &copy Copyright - All rights reserved 2022
+              </p>
             </div>
-            <div class="mb-2">
-              <a
-                class="text-dark text-decoration-none"
-                href="https://github.com/davidG199"
-              >
-                <img src="../imagenes/iconos/github.svg" alt="" /> Github</a
-              >
-            </div>
-          </div>
-          <div class="col-xs-12 pt-2">
-            <p class="text-center">
-              &copy Copyright - All rights reserved 2022
-            </p>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     <!-- fin de pie de pagina -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

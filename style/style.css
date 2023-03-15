@@ -26,7 +26,16 @@ body {
   background-color: rgb(140, 140, 140);
   border-radius: 20px 20px 20px 20px;
 }
+.btn {
+  padding: 5px;
+}
 /* estilos para el menu de navegacion */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+}
 
 #boton-ingresar {
   border-radius: 10px;
@@ -44,11 +53,11 @@ header .logo-nav {
 header .contenedor {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: rgb(230, 230, 230);
   width: 100vw;
   height: 10vh;
-  padding: 10px;
+  
 }
 header a {
   text-decoration: none;
@@ -71,7 +80,7 @@ header a:hover {
 
 #novedades {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 #novedades h1 {
@@ -123,8 +132,7 @@ header a:hover {
 }
 
 #categorias .contenedor h2 {
-  border-top: 1px solid;
-  margin: 15px 0px 5px 0px;
+  background-color: rgb(230, 230, 230);
 }
 
 .tematicas {
@@ -249,28 +257,42 @@ header a:hover {
 }
 
 /* estilos para los tips de lectura */
-.tip-de-lectura h2 {
-  border-bottom: 1px solid;
-  text-align: center;
+.caja {
   margin: 10px 5px;
+  display: flex;
+  justify-content: center;
 }
-
-.tip-de-lectura h4 {
-  color: rgb(133, 133, 133);
+.caja h2 {
+  background-color: rgb(230, 230, 230);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-
-.tip-de-lectura .contenedor {
-  margin: 10px 40px 100px 40px;
+.row {
+  justify-content: center;
 }
-
-.tip-de-lectura .contenedor p {
-  font-size: 18px;
+.card-body{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
-
+.card {
+  text-align: center;
+}
+.card-header {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:rgb(118, 169, 228);
+}
+.card-title {
+  font-weight: bolder;
+}
 /* estilos para el pie de pagina  */
 .container-fluid {
-  background-color: rgb(230, 230, 230);
   z-index: 100;
+}
+.pie {
+  background-color: rgb(230, 230, 230);
 }
 
 /* estilos para el login */
@@ -316,7 +338,7 @@ header a:hover {
   margin: auto;
   max-width: 1100px;
   text-align: center;
-  margin-top: 90px;
+  margin-top:80px;
 }
 
 #mas-leidos img {
@@ -326,6 +348,7 @@ header a:hover {
 
 #mas-leidos h2 {
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 #mas-leidos .titulo-categoria {
@@ -362,28 +385,27 @@ header a:hover {
     position: fixed;
     top: 0;
     z-index: 100;
-    
-  } 
+  }
   header nav {
     flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
-}
-header .contenedor {
-  flex-direction: row;
-  justify-content: space-around;
-  height: 8vh;
-}
-header .logo-nav{
-  display: none;
-}
-#novedades{
-  margin-top: 60px;
-}
-.cuadros{
-  flex-wrap:wrap; 
-  justify-content: space-around;
-}
+  }
+  header .contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 8vh;
+  }
+  header .logo-nav {
+    display: none;
+  }
+  #novedades {
+    margin-top: 60px;
+  }
+  .cuadros {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   #recomendaciones .contenedor {
     display: flex;
     margin: 0;
@@ -399,4 +421,10 @@ header .logo-nav{
     display: flex;
     flex-wrap: wrap;
   }
+}
+@media (min-heigth: 1140px) {
+  header {
+    margin-bottom: 100px;
+  }
+  
 }

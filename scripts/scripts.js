@@ -1,3 +1,5 @@
+// primer boton
+
 let botonVerMas = document.getElementById("botonVerMas");
 let verMas = document.getElementById("verMas");
 
