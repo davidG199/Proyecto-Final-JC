@@ -394,10 +394,10 @@ header a:hover {
   header .contenedor {
     flex-direction: row;
     justify-content: space-around;
-    height: 8vh;
+    
   }
   header .logo-nav {
-    display: none;
+    /*display: none;*/
   }
   #novedades {
     margin-top: 60px;
