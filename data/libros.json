@@ -1,0 +1,332 @@
+{
+  "catalogo": "¡LEER YA!",
+  "actualizado": "2026-11-19",
+  "libros": [
+    {
+      "id": "el-libro-negro-de-las-horas",
+      "title": "El libro negro de las horas",
+      "author": "Eva García Sáenz de Urturi",
+      "genre": "Thriller literario",
+      "description": "Un inspector recibe una llamada relacionada con un secreto de su familia y debe encontrar una joya bibliográfica antes de que una amenaza revele su pasado.",
+      "publisher": "Editorial Planeta",
+      "published": "2022",
+      "pages": 384,
+      "language": "es",
+      "isbn": "9788408310938",
+      "imageFiles": ["libro-10.jpg"],
+      "sources": [
+        "https://www.planetadelibros.com.ar/libro-el-libro-negro-de-las-horas/349113",
+        "https://openlibrary.org/works/OL26428951W"
+      ]
+    },
+    {
+      "id": "la-bestia",
+      "title": "La Bestia",
+      "author": "Carmen Mola",
+      "genre": "Thriller histórico",
+      "description": "En el Madrid de 1834, una epidemia de cólera convive con la investigación de los extraños asesinatos de niñas atribuidos a una criatura temida por todos.",
+      "publisher": "Editorial Planeta",
+      "published": "2021",
+      "pages": 544,
+      "language": "es",
+      "isbn": "9788408249849",
+      "imageFiles": ["libro-9.jpg"],
+      "sources": [
+        "https://www.planetadelibros.com/libro-la-bestia/344124",
+        "https://openlibrary.org/works/OL26377819W"
+      ]
+    },
+    {
+      "id": "el-jardin-de-las-mariposas",
+      "title": "El jardín de las mariposas",
+      "author": "Dot Hutchison",
+      "genre": "Ficción psicológica",
+      "description": "Dos agentes investigan la desaparición de mujeres en un mundo donde una figura manipuladora ha construido una colección privada rodeada de secretos.",
+      "publisher": "Editorial Planeta",
+      "published": "2019",
+      "pages": 304,
+      "language": "es",
+      "isbn": "9788427045392",
+      "imageFiles": ["libro-15.jpg", "libro-16.jpg"],
+      "sources": [
+        "https://openlibrary.org/books/OL29048732M/El_jard%C3%ADn_de_las_mariposas",
+        "https://openlibrary.org/books/OL27904737M/El_jardin_de_las_mariposas_-_1._edicion"
+      ]
+    },
+    {
+      "id": "el-economista-callejero",
+      "title": "El economista callejero",
+      "author": "Axel Kaiser",
+      "genre": "Economía",
+      "description": "Introducción clara a conceptos económicos fundamentales, desde precios y inflación hasta innovación y libertad individual.",
+      "publisher": "Planeta Publishing",
+      "published": "2022",
+      "pages": 128,
+      "language": "es",
+      "isbn": "9786075693279",
+      "imageFiles": ["libro-13.jpg"],
+      "sources": [
+        "https://books.google.com/books/about/El_economista_callejero.html?id=vJxKEAAAQBAJ",
+        "https://www.amazon.com/-/es/economista-callejero-Spanish-Barents-von-Hohenhagen/dp/6075693270"
+      ]
+    },
+    {
+      "id": "tostonazo",
+      "title": "Tostonazo",
+      "author": "Santiago Lorenzo",
+      "genre": "Sátira contemporánea",
+      "description": "Una novela de humor contenida y observación social que sigue a personajes habituales intentando encontrar sentido en situaciones cotidianas.",
+      "publisher": "Blackie Books",
+      "published": "2022",
+      "pages": 192,
+      "language": "es",
+      "isbn": "9788419172204",
+      "imageFiles": ["libro-6.jpg"],
+      "sources": [
+        "https://www.amazon.es/Tostonazo-esperada-novela-aclamado-asquerosos%C2%BB/dp/8419172200"
+      ]
+    },
+    {
+      "id": "hamlet",
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "genre": "Drama clásico",
+      "description": "El príncipe Hamlet duda, investiga y se debate entre venganza, culpa y la necesidad de descubrir la verdad detrás de la muerte de su padre.",
+      "publisher": null,
+      "published": "1603",
+      "pages": null,
+      "language": "es",
+      "isbn": null,
+      "imageFiles": ["mas-leido-1.jpg"],
+      "sources": [
+        "https://openlibrary.org/works/OL9170454W",
+        "https://www.gutenberg.org/ebooks/1524"
+      ]
+    },
+    {
+      "id": "el-libro-de-las-aguas",
+      "title": "El libro de las aguas",
+      "author": "Alejandro López Andrada",
+      "genre": "Poesía",
+      "description": "Conjunto poético construido alrededor del agua, la memoria y el silencio, con una voz cercana a la infancia y a los paisajes que la forman.",
+      "publisher": "Algaida",
+      "published": "2007",
+      "pages": 256,
+      "language": "es",
+      "isbn": "9788476479063",
+      "imageFiles": ["mas-leido-2.jpg"],
+      "sources": [
+        "https://www.casadellibro.com/libro-el-libro-de-las-aguas/9788476479063/1135957",
+        "https://openlibrary.org/works/OL35572964W"
+      ]
+    },
+    {
+      "id": "metamorfosis",
+      "title": "La metamorfosis",
+      "author": "Franz Kafka",
+      "genre": "Ficción alegórica",
+      "description": "Gregor Samsa despierta convertido en un insecto y observa cómo la incomprensión de su entorno redefine su lugar dentro de la familia y del trabajo.",
+      "publisher": "Mestas Ediciones",
+      "published": "1915",
+      "pages": 128,
+      "language": "es",
+      "isbn": "9788492892921",
+      "imageFiles": ["mas-leido-3.jpg"],
+      "sources": [
+        "https://www.amazon.com/-/es/metamorfosis-Franz-Kafka/dp/8492892927",
+        "https://openlibrary.org/works/OL36097905W"
+      ]
+    },
+    {
+      "id": "basilisco",
+      "title": "Basilisco",
+      "author": "Jon Bilbao",
+      "genre": "Narrativa contemporánea",
+      "description": "Un ingeniero llega a California y se encuentra con Katharina y con John Dunbar, un antepasado muerto que arrastra la historia del Far West hacia el presente.",
+      "publisher": "Impedimenta",
+      "published": "2019",
+      "pages": null,
+      "language": "es",
+      "isbn": "9788417553685",
+      "imageFiles": ["mas-leido-4.jpg"],
+      "sources": [
+        "https://oceano.mx/ficha-libro.aspx?id=20997",
+        "https://www.fce.pe/libro/basilisco-td_34398"
+      ]
+    },
+    {
+      "id": "los-amantes-de-praga",
+      "title": "Los amantes de Praga",
+      "author": "Alyson Richman",
+      "genre": "Romance histórico",
+      "description": "Lenka y Josef son separados por la Segunda Guerra Mundial y mantienen viva la esperanza de reencontrarse a través del arte y la memoria.",
+      "publisher": "Espasa",
+      "published": "2017",
+      "pages": null,
+      "language": "es",
+      "isbn": "9788467050738",
+      "imageFiles": ["libro-14.jpg"],
+      "sources": [
+        "https://books.google.com/books/about/Los_amantes_de_Praga_Edici%C3%B3n_espa%C3%B1ola.html?id=csYtDwAAQBAJ",
+        "https://www.amazon.com/Los-amantes-Praga-Alyson-Richman/dp/846705073X"
+      ]
+    },
+    {
+      "id": "el-arte-de-enganar-al-karma",
+      "title": "El arte de engañar al karma",
+      "author": "Elísabet Benavent",
+      "genre": "Ficción contemporánea",
+      "description": "Una novela sobre mujeres creadoras, decisiones personales y la posibilidad de transformar las circunstancias que parece haber escrito el destino.",
+      "publisher": "Suma",
+      "published": "2021",
+      "pages": 512,
+      "language": "es",
+      "isbn": "9788491291930",
+      "imageFiles": ["png.jpg"],
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/691422/el-arte-de-enganar-al-karma--the-art-of-cheating-karma-by-elisabet-benavent/",
+        "https://openlibrary.org/works/OL24333667W"
+      ]
+    },
+    {
+      "id": "la-chica-de-nieve",
+      "title": "La chica de nieve",
+      "author": "Javier Castillo",
+      "genre": "Thriller",
+      "description": "La desaparición de una niña durante una cabalgata de Acción de Gracias abre una investigación inquietante que involucra a una periodista y a una cinta misteriosa.",
+      "publisher": "Suma",
+      "published": "2020",
+      "pages": 450,
+      "language": "es",
+      "isbn": "9788491292661",
+      "imageFiles": ["libro-2.jpg"],
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/653948/la-chica-de-nieve--the-snow-girl-by-javier-castillo/",
+        "https://openlibrary.org/works/OL25065067W"
+      ]
+    },
+    {
+      "id": "mas-alla-del-invierno",
+      "title": "Más allá del invierno",
+      "author": "Isabel Allende",
+      "genre": "Ficción contemporánea",
+      "description": "Tres personas que viven momentos de profunda pérdida quedan atrapadas por una tormenta de nieve en Nueva York y encuentran esperanza en segundas oportunidades.",
+      "publisher": "Vintage Español",
+      "published": "2017",
+      "pages": 352,
+      "language": "es",
+      "isbn": "9780525436577",
+      "imageFiles": ["libro-3.jpg", "libro-11.jpg"],
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/564676/mas-alla-del-invierno--in-the-midst-of-winter-by-isabel-allende/",
+        "https://openlibrary.org/works/OL17721361W"
+      ]
+    },
+    {
+      "id": "como-hacer-que-te-pasen-cosas-buenas",
+      "title": "Cómo hacer que te pasen cosas buenas",
+      "author": "Marian Rojas Estapé",
+      "genre": "Psicología",
+      "description": "Una guía científica y práctica para comprender el cerebro, gestionar las emociones y construir respuestas más saludables ante el estrés y la preocupación.",
+      "publisher": "Editorial Planeta",
+      "published": "2018",
+      "pages": 232,
+      "language": "es",
+      "isbn": "9786070756924",
+      "imageFiles": ["libro-4.jpg", "libro-12.jpg"],
+      "sources": [
+        "https://books.google.com/books/about/C%C3%B3mo_Hacer_Que_Te_Pasen_Cosas_Buenas.html?id=fLNjzQEACAAJ",
+        "https://openlibrary.org/works/OL20142280W"
+      ]
+    },
+    {
+      "id": "la-encomienda",
+      "title": "La encomienda",
+      "author": "Margarita García Robayo",
+      "genre": "Novela contemporánea",
+      "description": "Una narradora lejos de Colombia mantiene videollamadas con su hermana y recibe paquetes cargados de recuerdos, dudas y afectos familiares.",
+      "publisher": "Anagrama",
+      "published": "2022",
+      "pages": null,
+      "language": "es",
+      "isbn": "9788433944955",
+      "imageFiles": ["libro-5.jpg"],
+      "sources": [
+        "https://www.anagrama-ed.es/libro/narrativas-hispanicas/la-encomienda/9788433944955/NH_699"
+      ]
+    },
+    {
+      "id": "alicia-en-el-pais-de-las-maravillas",
+      "title": "Alicia en el País de las Maravillas",
+      "author": "Lewis Carroll",
+      "genre": "Fantasía clásica",
+      "description": "Alicia sigue a un conejo blanco hasta un mundo lleno de reglas absurdas, personajes excéntricos y posibilidades que desafían la lógica.",
+      "publisher": "Penguin Clásicos",
+      "published": "1865",
+      "pages": null,
+      "language": "es",
+      "isbn": "9788491050742",
+      "imageFiles": ["libro-7.jpg"],
+      "sources": [
+        "https://www.penguinrandomhouse.com/books/579464/alicia-en-el-pais-de-las-maravillas-edicion-conmemorativa---alices-adventures--in-wonderland-by-lewis-carroll/",
+        "https://openlibrary.org/works/OL35769693W"
+      ]
+    },
+    {
+      "id": "el-palmeral-de-lilith",
+      "title": "El palmeral de Lilith",
+      "author": "Blanca Álvarez",
+      "genre": "Narrativa juvenil",
+      "description": "Lilith abandona su pueblo y emprende un viaje incierto hacia el sur con una pista que su abuela le dejó: el amor verdadero.",
+      "publisher": "Edelvives",
+      "published": "2016",
+      "pages": 176,
+      "language": "es",
+      "isbn": "9788414002117",
+      "imageFiles": ["imagen-8.jpg"],
+      "sources": [
+        "https://www.casadellibro.com/libro-el-palmeral-de-lilith/9788414002117/2938549"
+      ]
+    },
+    {
+      "id": "el-aleteo-de-la-mariposa",
+      "title": "El aleteo de la mariposa",
+      "author": "Luis A. Santamaría",
+      "genre": "Thriller",
+      "description": "Tres ciudades, tres crímenes y una conexión inesperada ponen a prueba una investigación que comienza con un gesto pequeño en el pasado.",
+      "publisher": "Independiente",
+      "published": "2016",
+      "pages": null,
+      "language": "es",
+      "isbn": "9781791325213",
+      "imageFiles": ["libro-17.jpg"],
+      "sources": [
+        "https://www.amazon.com/EL-ALETEO-MARIPOSA-polic%C3%ADaca-intuici%C3%B3n/dp/1791325211"
+      ]
+    },
+    {
+      "id": "limonov",
+      "title": "Limónov",
+      "author": "Emmanuel Carrère",
+      "genre": "Biografía novelada",
+      "description": "Retrato de Eduard Limónov y de su trayectoria desmesurada a través de la literatura, la política y varias décadas de historia rusa.",
+      "publisher": "Anagrama",
+      "published": "2011",
+      "pages": null,
+      "language": "es",
+      "isbn": "9788433934130",
+      "imageFiles": [],
+      "sources": [
+        "https://www.anagrama-ed.es/libro/ebooks/limonov/9788433934130/EB_186",
+        "https://openlibrary.org/works/OL16557281W"
+      ]
+    }
+  ],
+  "imagenesSinFicha": [
+    {
+      "file": "fondo-libro.jpg",
+      "usage": "Fondo decorativo",
+      "book": null
+    }
+  ]
+}
