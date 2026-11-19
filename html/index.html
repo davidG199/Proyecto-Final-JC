@@ -2,354 +2,218 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEER YA</title>
+    <meta
+      name="description"
+      content="Descubre tu próxima historia favorita en ¡Leer Ya!"
+    />
+    <title>¡LEER YA! | Historias que te encuentran</title>
     <link rel="shortcut icon" href="../imagenes/ojo.png" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/style.css?v=20261119d" />
   </head>
-  <body>
-    <header>
-      <!-- menu de navegacion  -->
-      <div class="contenedor">
-        <a href="./index.html">
-          <img src="../imagenes/ojo.png" alt="logo" class="logo-nav" />
-          ¡LEER YA!
+  <body class="home-page">
+    <header class="home-header">
+      <div class="page-container site-header">
+        <a class="brand" href="./index.html" aria-label="Ir al inicio de Leer Ya">
+          <img src="../imagenes/ojo.png" alt="" class="logo-nav" />
+          <span>¡LEER YA!</span>
         </a>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <a href="./index.html">Inicio</a>
-            <a href="#categorias">Generos</a>
-            <a href="./vistos.html">Mas leidos</a>
-            <a id="boton-ingresar" href="./login.html">Ingresar</a>
-          </div>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="active" href="./index.html">Inicio</a>
+          <a href="#categorias">Géneros</a>
+          <a href="./vistos.html">Más leídos</a>
         </nav>
+        <div class="header-actions">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Busca un libro o autor" aria-label="Buscar un libro o autor" />
+          </label>
+          <a id="boton-ingresar" class="login-link" href="./login.html">Ingresar</a>
+        </div>
       </div>
     </header>
-    <!-- fin menu de navegacion -->
-    <section id="novedades">
-      <!-- seccion de novedades -->
-      <!-- carrusel bootstrap -->
-      <h1>Las mejores novedades</h1>
-      <div class="contenedor-carrusel">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../imagenes/imagen-8.jpg"
-                class="d-block w-100"
-                alt="libro"
-              />
+
+    <main>
+      <section id="novedades" class="hero-section">
+        <div class="page-container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">✦ Descubrimiento literario en Colombia</p>
+            <h1>Historias que<br /><em>te encuentran.</em></h1>
+            <p class="hero-text">
+              Sumérgete en una cuidada selección de literatura contemporánea,
+              clásicos universales y nuevas voces. Tu próxima gran lectura está
+              esperando.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#recomendaciones">Explorar libros <span>→</span></a>
+              <a class="button button-secondary" href="./vistos.html">Ver más leídos</a>
             </div>
-            <div class="carousel-item active">
-              <img
-                src="../imagenes/libro-7.jpg"
-                class="d-block w-100"
-                alt="libro"
-              />
+            <p class="hero-note"><strong>14.000+</strong> títulos curados por lectores apasionados</p>
+          </div>
+          <div class="hero-books" aria-label="Selección de libros destacados">
+            <span class="book-badge">Recomendado del mes</span>
+            <div class="book book-back book-back-left">
+              <img src="../imagenes/libro-7.jpg" alt="Portada de un libro recomendado" />
             </div>
-            <div class="carousel-item active">
-              <img
-                src="../imagenes/libro-2.jpg"
-                class="d-block w-100"
-                alt="libro"
-              />
+            <div class="book book-main">
+              <img src="../imagenes/imagen-8.jpg" alt="Portada del libro destacado" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="../imagenes/libro-3.jpg"
-                class="d-block w-100"
-                alt="libro"
-              />
+            <div class="book book-back book-back-right">
+              <img src="../imagenes/libro-3.jpg" alt="Portada de un libro de poesía" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="../imagenes/libro-5.jpg"
-                class="d-block w-100"
-                alt="libro"
-              />
+            <span class="hero-sparkle sparkle-one">✦</span>
+            <span class="hero-sparkle sparkle-two">✧</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="categorias" class="section-block categories-section">
+        <div class="page-container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Para cada estado de ánimo</p>
+              <h2>Explora por géneros</h2>
+              <p>Descubre mundos creados para cada tipo de lector.</p>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="genre-grid">
+            <a class="genre-card genre-child" href="#recomendaciones">
+              <img src="../imagenes/iconos/game.svg" alt="" />
+              <span class="genre-label">Cuentos &amp; fábulas</span>
+              <strong>Infantil</strong>
+              <small>320+ libros</small>
+            </a>
+            <a class="genre-card genre-science" href="#recomendaciones">
+              <img src="../imagenes/iconos/ciencia.svg" alt="" />
+              <span class="genre-label">Divulgación &amp; futuro</span>
+              <strong>Ciencia</strong>
+              <small>180+ libros</small>
+            </a>
+            <a class="genre-card genre-fantasy" href="#recomendaciones">
+              <img src="../imagenes/iconos/fantasia.svg" alt="" />
+              <span class="genre-label">Épica &amp; magia</span>
+              <strong>Fantasía</strong>
+              <small>240+ libros</small>
+            </a>
+            <a class="genre-card genre-romance" href="#recomendaciones">
+              <img src="../imagenes/iconos/corazon.svg" alt="" />
+              <span class="genre-label">Historias contemporáneas</span>
+              <strong>Romance</strong>
+              <small>410+ libros</small>
+            </a>
+            <a class="genre-card genre-novels" href="#recomendaciones">
+              <img src="../imagenes/iconos/novelas.svg" alt="" />
+              <span class="genre-label">Ficción &amp; realismo</span>
+              <strong>Novelas</strong>
+              <small>520+ libros</small>
+            </a>
+          </div>
+          <div class="more-genres" id="verMas">
+            <ul>
+              <li>Terror</li>
+              <li>Suspenso</li>
+              <li>Poemas</li>
+              <li>Novela policiaca</li>
+              <li>Historia</li>
+              <li>Aventuras</li>
+              <li>Política</li>
+              <li>Autoayuda</li>
+            </ul>
+          </div>
+          <button class="button button-outline" id="botonVerMas" type="button">Ver más categorías</button>
         </div>
+      </section>
+
+      <section id="recomendaciones" class="section-block recommendations-section">
+        <div class="page-container">
+          <div class="section-heading section-heading-inline">
+            <div>
+              <p class="eyebrow">Nuevas historias en la estantería</p>
+              <h2>Novedades para ti</h2>
+              <p>Títulos recién llegados a nuestra comunidad lectora.</p>
+            </div>
+            <a class="text-link" href="./vistos.html">Ver todo el catálogo <span>→</span></a>
+          </div>
+          <div class="book-grid">
+            <article class="book-card">
+              <div class="cover-wrap"><img src="../imagenes/png.jpg" alt="Portada de El arte de engañar el karma" /></div>
+              <span class="tag">Crecimiento personal</span>
+              <h3>El arte de engañar el karma</h3>
+              <p>Una historia para volver a empezar</p>
+              <div class="book-meta"><span>★ 4.9</span><a href="./Libro.html">Ver libro →</a></div>
+            </article>
+            <article class="book-card">
+              <div class="cover-wrap"><img src="../imagenes/libro-2.jpg" alt="Portada de La chica de nieve" /></div>
+              <span class="tag tag-coral">Suspenso</span>
+              <h3>La chica de nieve</h3>
+              <p>Una búsqueda que no termina</p>
+              <div class="book-meta"><span>★ 4.8</span><a href="./Libro.html">Ver libro →</a></div>
+            </article>
+            <article class="book-card">
+              <div class="cover-wrap"><img src="../imagenes/libro-3.jpg" alt="Portada de Más allá del invierno" /></div>
+              <span class="tag tag-yellow">Novela</span>
+              <h3>Más allá del invierno</h3>
+              <p>Historias que florecen en el frío</p>
+              <div class="book-meta"><span>★ 5.0</span><a href="./Libro.html">Ver libro →</a></div>
+            </article>
+            <article class="book-card">
+              <div class="cover-wrap"><img src="../imagenes/libro-5.jpg" alt="Portada de La encomienda" /></div>
+              <span class="tag tag-blue">Contemporánea</span>
+              <h3>La encomienda</h3>
+              <p>Una voz nueva para la literatura</p>
+              <div class="book-meta"><span>★ 4.9</span><a href="./Libro.html">Ver libro →</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reading-tip">
+        <div class="page-container tip-panel">
+          <div>
+            <p class="eyebrow">✦ Tip de lectura diaria</p>
+            <h2>Un buen hábito empieza con 20 minutos.</h2>
+            <p>
+              No necesitas horas seguidas para transformar tu relación con los
+              libros. Integra la lectura en tus pausas del café o antes de dormir.
+            </p>
+            <a class="button button-primary" href="#tips">Leer consejos <span>→</span></a>
+          </div>
+          <div class="habit-card">
+            <span>Mi meta de hoy</span>
+            <strong>20 min</strong>
+            <div class="progress-ring"><span>75%</span></div>
+            <small>“La lectura hace al hombre completo.”</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="tips" class="tips-section section-block">
+        <div class="page-container">
+          <div class="section-heading">
+            <p class="eyebrow">Pequeños pasos, grandes historias</p>
+            <h2>Tips para leer mejor</h2>
+          </div>
+          <div class="tips-grid">
+            <article><span>01</span><h3>Reserva 20 minutos</h3><p>Elige un momento del día y conviértelo en tu ritual.</p></article>
+            <article><span>02</span><h3>Déjate recomendar</h3><p>Comparte lecturas con quienes disfrutan descubrir historias.</p></article>
+            <article><span>03</span><h3>No pongas pretextos</h3><p>Unas pocas páginas también construyen un hábito duradero.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="page-container footer-content">
+        <div>
+          <a class="brand footer-brand" href="./index.html"><img src="../imagenes/ojo.png" alt="" /> <span>¡LEER YA!</span></a>
+          <p>Historias que te encuentran.</p>
+        </div>
+        <div><h3>Explora</h3><a href="#categorias">Géneros</a><a href="./vistos.html">Más leídos</a></div>
+        <div><h3>Contacto</h3><a href="#">Instagram</a><a href="#">Facebook</a><a href="https://github.com/davidG199">Github</a></div>
       </div>
-    </section>
-    <!-- fin carrusel -->
-    <br />
-    <!-- tematicas destacadas -->
-    <section id="categorias">
-      <div class="contenedor">
-        <div class="caja">
-          <h2>Tematicas destacadas</h2>
-        </div>
-        <div class="tematicas">
-          <div class="cuadros">
-            <div class="cuadritos">
-              <div class="logo" id="primer-cuadro">
-                <img src="../imagenes/iconos/game.svg" alt="iconos" />
-              </div>
-              <div class="texto"><a href="">Infantil</a></div>
-            </div>
-            <div class="cuadritos">
-              <div class="logo" id="segundo-cuadro">
-                <img src="../imagenes/iconos/ciencia.svg" alt="iconos" />
-              </div>
-              <div class="texto"><a href="">Ciencia</a></div>
-            </div>
-            <div class="cuadritos">
-              <div class="logo" id="tercer-cuadro">
-                <img src="../imagenes/iconos/fantasia.svg" alt="iconos" />
-              </div>
-              <div class="texto"><a href="">Fantasia</a></div>
-            </div>
-            <div class="cuadritos">
-              <div class="logo" id="cuarto-cuadro">
-                <img src="../imagenes/iconos/corazon.svg" alt="iconos" />
-              </div>
-              <div class="texto"><a href="">Romance</a></div>
-            </div>
-            <div class="cuadritos">
-              <div class="logo" id="quinto-cuadro">
-                <img src="../imagenes/iconos/novelas.svg" alt="iconos" />
-              </div>
-              <div class="texto"><a href="">Novelas</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="boton-funcionJS">
-        <div class="contenido" id="verMas">
-          <ul>
-            <li>Terror</li>
-            <li>Suspenso</li>
-            <li>Poemas</li>
-            <li>Novela policiacas</li>
-            <li>Libros de historia</li>
-            <li>Aventuras</li>
-            <li>Politica</li>
-            <li>Auto ayuda</li>
-          </ul>
-        </div>
-      </div>
-      <button class="boton" id="botonVerMas">Ver mas categorias</button>
-      <!-- fin de categorias destacadas -->
-    </section>
-    <section id="recomendaciones">
-      <!-- recomendaciones de libros -->
-      <div class="caja">
-        <h2>Nuestras recomendaciones</h2>
-      </div>
-      <div class="contenedor">
-        <div class="cartas">
-          <img src="../imagenes/png.jpg" alt="libro-1" />
-          <h3>El arte de engañar <br />el karma</h3>
-          <button class="boton" id="botonVerMasUno">Ver mas</button>
-        </div>
-        <div class="cartas boton-ver-mas">
-          <img src="../imagenes/libro-2.jpg" alt="libro-2" />
-          <h3>La chica de nieve</h3>
-          <button class="boton" id="primer-boton">Ver mas</button>
-        </div>
-        <div class="cartas boton-ver-mas">
-          <img src="../imagenes/libro-3.jpg" alt="libro-3" />
-          <h3>Mas alla del invierno</h3>
-          <button class="boton" id="segundo-boton">Ver mas</button>
-        </div>
-        <div class="cartas boton-ver-mas">
-          <img src="../imagenes/libro-4.jpg" alt="libro-4" />
-          <h3>Como hacer que te pasen <br />cosas buenas</h3>
-          <button class="boton">Ver mas</button>
-        </div>
-        <div class="cartas boton-ver-mas">
-          <img src="../imagenes/libro-5.jpg" alt="libro-5" />
-          <h3>La encomienda</h3>
-          <button class="boton" id="ultimo-boton">Ver mas</button>
-        </div>
-      </div>
-      <br />
-      <!-- fin de recomendaciones de libros -->
-    </section>
-    <!-- tips para leer mejor  -->
-    <section class="tip-de-lectura container-fluid">
-      <div class="caja">
-        <h2 class="titulo">TIPS PARA LEER MEJOR</h2>
-      </div>
-      <div
-        class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 m-4"
-      >
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="card-header mb-3"><strong>tip#1</strong></div>
-              <h5 class="card-title">
-                Reserva al menos 20 minutos al dia para leer.
-              </h5>
-              <p class="card-text">
-                El día a día nos consume y nos deja sin tiempo para momentos de
-                ocio, como puede ser la lectura de libros. Es por eso por lo que
-                es importante una buena organización y reservar un pequeño
-                espacio de tiempo para leer. Quizás 20 minutos sean más que
-                suficientes para empezar, aunque seguro que pronto te darás
-                cuenta que es tiempo insuficiente. Puedes leer después de comer,
-                antes de cenar o justo cuando te acuestas en la cama. Eso sí, es
-                importante comprometerse a cumplirlo para poder crear el hábito
-                de la lectura.
-              </p>
-              <button class="btn btn-primary">LEER MAS!</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="card-header mb-3"><strong>tip#2</strong></div>
-              <h5 class="card-title">
-                Habla e intercambia libros con familiares y amigos
-              </h5>
-              <p class="card-tex">
-                Leer es contagioso, y qué mejor que propagar esta acción entre
-                las personas allegadas. No dudes en hablar de los libros que te
-                estás leyendo con familiares y amigos, y participa en el
-                intercambio de libros con ellos. Sugiéreles nuevas lecturas en
-                función de tus impresiones y déjate aconsejar por ellos. Quizás
-                sea un buen momento para descubrir nuevos libros que te marcarán
-                o para darte cuenta que ese género literario no está hecho para
-                ti.
-              </p>
-              <button class="btn btn-primary">LEER MAS!</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="card-header mb-3"><strong>tip#3</strong></div>
-              <h5 class="card-title">Dejate recomendar.</h5>
-              <p class="card-text">
-                Elegir cuál será tu próxima lectura no es fácil, más si el libro
-                que has terminado ha dejado el listón bastante alto. Es por ello
-                por lo que puedes dejarte recomendar por profesionales del
-                sector del libro como son los bibliotecarios o los libreros.
-                También puedes tener en cuenta las recomendaciones que hacen las
-                editoriales, los críticos literarios, los blogs sobre libros y
-                lecturas e incluso los booktubers.
-              </p>
-              <button class="btn btn-primary">LEER MAS!</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="card-header mb-3"><strong>tip#4</strong></div>
-              <h5 class="card-title">No pongas pretextos.</h5>
-              <p class="card-text">
-                Procura darle tiempo a las palabras y a las historias, lo cual
-                se convertirá en un círculo virtuoso que te dará oportunidad de
-                ver cosas que no habías visto porque las ignorabas.
-              </p>
-              <button class="btn btn-primary">LEER MAS!</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="card-header mb-3"><strong>tip#5</strong></div>
-              <h5 class="card-title">
-                Recuerda que los libros enriquecen la vida.
-              </h5>
-              <p class="card-text">
-                desarrollan la conciencia personal y la cultura. Conservan el
-                saber, lo difunden y le abren nuevos horizontes. Favorecen la
-                imaginación, la creación, la investigación, la innovación.
-                Entonces, ¡ahora sí! evento extraordinario. comienza hoy mismo
-                con un pequeño texto para hacer de la vida un
-              </p>
-              <button class="btn btn-primary">LEER MAS!</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin tips para leer mejor -->
-    <!-- pie de pagina -->
-      <footer>
-        <div class="container-fluid pie">
-          <div class="row p-5 pb-2 pt-3">
-            <div class="col-xs-12 col-md-8 col-lg-4 col-sm-4">
-              <p class="mt-5">
-                &copy Proyecto final Jovenes Creativos <br />
-                David Gomez ✌
-              </p>
-            </div>
-            <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
-              <p class="h5 mb-4"><strong>Links</strong></p>
-              <div class="mb-2">
-                <a href="" class="text-dark text-decoration-none"
-                  >terms & conditions</a
-                >
-              </div>
-              <div class="mb-2">
-                <a href="" class="text-dark text-decoration-none"
-                  >privacy and police</a
-                >
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 col-sm-4">
-              <p class="h5 mb-4"><strong>Contacto</strong></p>
-              <div class="mb-2">
-                <a href="" class="text-dark text-decoration-none">
-                  <img src="../imagenes/iconos/instagram.svg" alt="" />
-                  instagram</a
-                >
-              </div>
-              <div class="mb-2">
-                <a href="" class="text-dark text-decoration-none">
-                  <img src="../imagenes/iconos/facebook.svg" alt="" /> facebook</a
-                >
-              </div>
-              <div class="mb-2">
-                <a
-                  class="text-dark text-decoration-none"
-                  href="https://github.com/davidG199"
-                >
-                  <img src="../imagenes/iconos/github.svg" alt="" /> Github</a
-                >
-              </div>
-            </div>
-            <div class="col-xs-12 pt-2">
-              <p class="text-center">
-                &copy Copyright - All rights reserved 2022
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    <!-- fin de pie de pagina -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <div class="footer-bottom">© Proyecto final Jóvenes Creativos · Todos los derechos reservados</div>
+    </footer>
+
     <script src="../scripts/scripts.js"></script>
   </body>
 </html>
