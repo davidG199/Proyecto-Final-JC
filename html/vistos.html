@@ -2,152 +2,253 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEER YA</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="shortcut icon" href="../imagenes/ojo.png" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
+    <meta
+      name="description"
+      content="Descubre los libros más leídos de la semana y del mes en Leer Ya."
     />
+    <title>Más leídos | ¡LEER YA!</title>
+    <link rel="shortcut icon" href="../imagenes/ojo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/style.css?v=20261119e" />
   </head>
-  <body>
-    <header>
-      <!-- menu de navegacion  -->
-      <div class="contenedor">
-        <a href="./index.html">
-          <img src="../imagenes/ojo.png" alt="logo" class="logo-nav" />
-          ¡LEER YA!
+  <body class="home-page rankings-page">
+    <header class="home-header">
+      <div class="page-container site-header">
+        <a class="brand" href="./index.html" aria-label="Ir al inicio de Leer Ya">
+          <img src="../imagenes/ojo.png" alt="" class="logo-nav" />
+          <span>¡LEER YA!</span>
         </a>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid"></div>
+        <nav class="main-nav" aria-label="Navegación principal">
           <a href="./index.html">Inicio</a>
-          <a href="./index.html">Generos</a>
-          <a href="./vistos.html">Mas leidos</a>
-          <a id="boton-ingresar" href="./login.html">Ingresar</a>
+          <a href="./index.html#categorias">Géneros</a>
+          <a class="active" href="./vistos.html" aria-current="page">Más leídos</a>
         </nav>
+        <div class="header-actions">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Busca un libro o autor" aria-label="Buscar un libro o autor" />
+          </label>
+          <a id="boton-ingresar" class="login-link" href="./login.html">Ingresar</a>
+        </div>
       </div>
     </header>
-    <!-- fin menu de navegacion -->
-    <!-- inicio del slider -->
-    <section id="mas-leidos">
-      <div class="caja">
-        <h2 id="tituloMasLeidos">los libros mas leidos</h2>
-      </div>
-      <div class="titulo-categoria">
-        <h4>Mas leidos esta semana</h4>
-      </div>
-      <div class="contenedor">
-        <div class="cartas">
-          <img src="../imagenes/libro-10.jpg" alt="libro-1" />
-          <h3>El libro negro de las horas</h3>
-        </div>
-        <div class="cartas">
-          <img src="../imagenes/libro-9.jpg" alt="libro-2" />
-          <h3>La bestia</h3>
-        </div>
-        <div class="cartas">
-          <img src="../imagenes/libro-15.jpg" alt="libro-3" />
-          <h3>El jardin de las mariposas</h3>
-        </div>
-        <div class="cartas">
-          <img src="../imagenes/libro-13.jpg" alt="libro-4" />
-          <h3>El economiasta callejero</h3>
-        </div>
-        <div class="cartas">
-          <img src="../imagenes/libro-6.jpg" alt="libro-5" />
-          <h3>Tostonazo</h3>
-        </div>
-      </div>
-      <div class="titulo-categoria">
-        <h4>Mas leidos este mes</h4>
-      </div>
 
-      <div class="contenedor">
-        <div class="cartas">
-          <img src="../imagenes/mas-leido-1.jpg" alt="libro-1" />
-          <h3>Hamlet</h3>
+    <main>
+      <section class="ranking-hero" aria-labelledby="ranking-title">
+        <div class="page-container">
+          <p class="eyebrow">Lecturas que marcan tendencia</p>
+          <h1 id="ranking-title">Los libros más leídos</h1>
+          <p class="ranking-intro">
+            La comunidad ya abrió estas historias. Descubre qué está leyendo ahora.
+          </p>
+
+          <div class="ranking-toolbar" aria-label="Filtros de periodo">
+            <div class="period-filter">
+              <button class="period-filter-button active" type="button" aria-pressed="true">Esta semana</button>
+              <button class="period-filter-button" type="button" aria-pressed="false">Este mes</button>
+              <button class="period-filter-button" type="button" aria-pressed="false">Todos</button>
+            </div>
+            <p class="ranking-update"><span aria-hidden="true"></span>Actualizado hoy</p>
+          </div>
         </div>
-        <div class="cartas">
-          <img src="../imagenes/mas-leido-2.jpg" alt="libro-2" />
-          <h3>El libro de las aguas</h3>
+      </section>
+
+      <section class="rankings-section" aria-labelledby="weekly-title">
+        <div class="page-container">
+          <div class="ranking-section-heading">
+            <div>
+              <p class="eyebrow">Tendencia nacional</p>
+              <h2 id="weekly-title">Más leídos esta semana</h2>
+            </div>
+            <span class="rank-count">5 títulos</span>
+          </div>
+
+          <div class="ranking-grid">
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 1">01</div>
+              <a class="ranking-cover" href="./Libro.html?id=el-libro-negro-de-las-horas" aria-label="Ver El libro negro de las horas">
+                <img src="../imagenes/libro-10.jpg" alt="Portada de El libro negro de las horas" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag">Thriller literario</span>
+                <h3><a href="./Libro.html?id=el-libro-negro-de-las-horas">El libro negro de las horas</a></h3>
+                <p class="rank-author">Eva García Sáenz de Urturi</p>
+                <p class="rank-popularity"><strong>★ 4.9</strong><span>14.280 lecturas activas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 2">02</div>
+              <a class="ranking-cover" href="./Libro.html?id=la-bestia" aria-label="Ver La bestia">
+                <img src="../imagenes/libro-9.jpg" alt="Portada de La bestia" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-coral">Novela histórica</span>
+                <h3><a href="./Libro.html?id=la-bestia">La bestia</a></h3>
+                <p class="rank-author">Carmen Mola</p>
+                <p class="rank-popularity"><strong>★ 4.8</strong><span>11.950 lecturas activas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 3">03</div>
+              <a class="ranking-cover" href="./Libro.html?id=el-jardin-de-las-mariposas" aria-label="Ver El jardín de las mariposas">
+                <img src="../imagenes/libro-15.jpg" alt="Portada de El jardín de las mariposas" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-sage">Ficción psicológica</span>
+                <h3><a href="./Libro.html?id=el-jardin-de-las-mariposas">El jardín de las mariposas</a></h3>
+                <p class="rank-author">Dot Hutchison</p>
+                <p class="rank-popularity"><strong>★ 4.7</strong><span>9.840 lecturas activas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 4">04</div>
+              <a class="ranking-cover" href="./Libro.html?id=el-economista-callejero" aria-label="Ver El economista callejero">
+                <img src="../imagenes/libro-13.jpg" alt="Portada de El economista callejero" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-blue">Ensayo</span>
+                <h3><a href="./Libro.html?id=el-economista-callejero">El economista callejero</a></h3>
+                <p class="rank-author">Axel Kaiser</p>
+                <p class="rank-popularity"><strong>★ 4.6</strong><span>8.620 lecturas activas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 5">05</div>
+              <a class="ranking-cover" href="./Libro.html?id=tostonazo" aria-label="Ver Tostonazo">
+                <img src="../imagenes/libro-6.jpg" alt="Portada de Tostonazo" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-yellow">Sátira contemporánea</span>
+                <h3><a href="./Libro.html?id=tostonazo">Tostonazo</a></h3>
+                <p class="rank-author">Santiago Lorenzo</p>
+                <p class="rank-popularity"><strong>★ 4.7</strong><span>7.410 lecturas activas</span></p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="cartas">
-          <img src="../imagenes/mas-leido-3.jpg" alt="libro-3" />
-          <h3>Metamorfosis</h3>
+      </section>
+
+      <section class="rankings-section monthly-rankings" aria-labelledby="monthly-title">
+        <div class="page-container">
+          <div class="ranking-section-heading">
+            <div>
+              <p class="eyebrow">Permanencia y conversación</p>
+              <h2 id="monthly-title">Más leídos este mes</h2>
+            </div>
+            <span class="rank-count">5 títulos</span>
+          </div>
+
+          <div class="ranking-grid">
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 1">01</div>
+              <a class="ranking-cover" href="./Libro.html?id=hamlet" aria-label="Ver Hamlet">
+                <img src="../imagenes/mas-leido-1.jpg" alt="Portada de Hamlet" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-blue">Clásicos universales</span>
+                <h3><a href="./Libro.html?id=hamlet">Hamlet</a></h3>
+                <p class="rank-author">William Shakespeare</p>
+                <p class="rank-popularity"><strong>★ 5.0</strong><span>22.400 lecturas acumuladas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 2">02</div>
+              <a class="ranking-cover" href="./Libro.html?id=el-libro-de-las-aguas" aria-label="Ver El libro de las aguas">
+                <img src="../imagenes/mas-leido-2.jpg" alt="Portada de El libro de las aguas" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-sage">Poesía y crónica</span>
+                <h3><a href="./Libro.html?id=el-libro-de-las-aguas">El libro de las aguas</a></h3>
+                <p class="rank-author">Eduardo Galeano</p>
+                <p class="rank-popularity"><strong>★ 4.9</strong><span>19.350 lecturas acumuladas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 3">03</div>
+              <a class="ranking-cover" href="./Libro.html?id=metamorfosis" aria-label="Ver Metamorfosis">
+                <img src="../imagenes/mas-leido-3.jpg" alt="Portada de Metamorfosis" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag">Ficción alegórica</span>
+                <h3><a href="./Libro.html?id=metamorfosis">Metamorfosis</a></h3>
+                <p class="rank-author">Franz Kafka</p>
+                <p class="rank-popularity"><strong>★ 4.8</strong><span>16.890 lecturas acumuladas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 4">04</div>
+              <a class="ranking-cover" href="./Libro.html?id=basilisco" aria-label="Ver El basilisco">
+                <img src="../imagenes/mas-leido-4.jpg" alt="Portada de El basilisco" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-coral">Narrativa hispanoamericana</span>
+                <h3><a href="./Libro.html?id=basilisco">El basilisco</a></h3>
+                <p class="rank-author">Laura Restrepo</p>
+                <p class="rank-popularity"><strong>★ 4.8</strong><span>15.120 lecturas acumuladas</span></p>
+              </div>
+            </article>
+
+            <article class="ranking-card">
+              <div class="rank-number" aria-label="Posición 5">05</div>
+              <a class="ranking-cover" href="./Libro.html?id=los-amantes-de-praga" aria-label="Ver Los amantes de Praga">
+                <img src="../imagenes/libro-14.jpg" alt="Portada de Los amantes de Praga" />
+              </a>
+              <div class="ranking-copy">
+                <span class="rank-tag rank-tag-yellow">Romance histórico</span>
+                <h3><a href="./Libro.html?id=los-amantes-de-praga">Los amantes de Praga</a></h3>
+                <p class="rank-author">Alyson Richman</p>
+                <p class="rank-popularity"><strong>★ 4.7</strong><span>13.980 lecturas acumuladas</span></p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="cartas">
-          <img src="../imagenes/mas-leido-4.jpg" alt="libro-4" />
-          <h3>El basilisco</h3>
-        </div>
-        <div class="cartas">
-          <img src="../imagenes/libro-14.jpg" alt="libro-5" />
-          <h3>Los amantes de praga</h3>
-        </div>
-      </div>
-    </section>
-    <!-- fin del slider -->
-    <!-- pie de pagina -->
+      </section>
+    </main>
+
     <footer>
-      <div class="container-fluid pie">
-        <div class="row p-5 pb-2 pt-3">
-          <div class="col-xs-12 col-md-8 col-lg-4 col-sm-4">
-            <p class="mt-5">
-              &copy Proyecto final Jovenes Creativos <br />
-              David Gomez ✌
-            </p>
-          </div>
-          <div class="col-xs-12 col-md-4 col-lg-4 col-sm-4">
-            <p class="h5 mb-4"><strong>Links</strong></p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >terms & conditions</a
-              >
-            </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none"
-                >privacy and police</a
-              >
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 col-sm-4">
-            <p class="h5 mb-4"><strong>Contacto</strong></p>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">
-                <img src="../imagenes/iconos/instagram.svg" alt="" />
-                instagram</a
-              >
-            </div>
-            <div class="mb-2">
-              <a href="" class="text-dark text-decoration-none">
-                <img src="../imagenes/iconos/facebook.svg" alt="" /> facebook</a
-              >
-            </div>
-            <div class="mb-2">
-              <a
-                class="text-dark text-decoration-none"
-                href="https://github.com/davidG199"
-              >
-                <img src="../imagenes/iconos/github.svg" alt="" /> Github</a
-              >
-            </div>
-          </div>
-          <div class="col-xs-12 pt-2">
-            <p class="text-center">
-              &copy Copyright - All rights reserved 2022
-            </p>
-          </div>
+      <div class="page-container footer-content">
+        <div>
+          <a class="brand footer-brand" href="./index.html"><img src="../imagenes/ojo.png" alt="" /> <span>¡LEER YA!</span></a>
+          <p>Historias que te encuentran.</p>
         </div>
+        <div><h3>Explora</h3><a href="./index.html">Inicio</a><a href="./index.html#categorias">Géneros</a></div>
+        <div><h3>Contacto</h3><a href="#">Instagram</a><a href="#">Facebook</a><a href="https://github.com/davidG199">Github</a></div>
       </div>
+      <div class="footer-bottom">© Proyecto final Jóvenes Creativos · Todos los derechos reservados</div>
     </footer>
-    <!-- fin de pie de pagina -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      const periodButtons = document.querySelectorAll(".period-filter-button");
+      const weeklySection = document.querySelector("#weekly-title");
+      const monthlySection = document.querySelector("#monthly-title");
+
+      periodButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          periodButtons.forEach((item) => {
+            item.classList.remove("active");
+            item.setAttribute("aria-pressed", "false");
+          });
+          button.classList.add("active");
+          button.setAttribute("aria-pressed", "true");
+
+          if (button.textContent.trim() === "Esta semana") {
+            weeklySection?.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else if (button.textContent.trim() === "Este mes") {
+            monthlySection?.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            document.querySelector(".ranking-hero")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
